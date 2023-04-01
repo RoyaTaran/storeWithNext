@@ -1,0 +1,88 @@
+@import "./reset.css";
+@import url("https://gitcdn.ir/library/PersianFonts/vazir/style.css");
+
+:root {
+  --bg-main-color: #f3f4f6;
+  --bg-card-color: #fff;
+  --bg-input-color: #dfe6e9;
+  --bg-nav-color: #b2bec3;
+  --bg-badge-color: #ffa551;
+  --text-light-color: #637789;
+  --text-dark-color: #2c343c;
+  --hover-color: #3183ff;
+}
+
+body {
+  font-family: "vazir", Vazirmatn, sans-serif;
+}
+
+.font-vazir {
+  font-family: "vazir", Vazirmatn, sans-serif;
+}
+.bg-main {
+  background-color: var(--bg-main-color);
+}
+
+.bg-card {
+  background-color: var(--bg-card-color);
+}
+
+.bg-input {
+  background-color: var(--bg-input-color);
+}
+
+.bg-nav {
+  background-color: var(--bg-nav-color);
+}
+.bg-badge {
+  background-color: var(--bg-badge-color);
+}
+
+.text-light-color {
+  color: var(--text-light-color);
+}
+
+.text-dark-color {
+  color: var(--text-dark-color);
+}
+
+.hover-main-color:hover {
+  background-color: var(--hover-color) !important;
+  color: #fff !important;
+}
+
+.hover-navlink:hover {
+  border-color: var(--hover-color) !important;
+  opacity: 0.9;
+}
+.hover-icon:hover {
+  color: var(--bg-input-color);
+  background-color: var(--text-dark-color);
+}
+
+.hover-danger:hover {
+  color: red;
+}
+
+.border-nav-color {
+  border-color: var(--bg-nav-color) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hidden-menu {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 100%;
+  transition: all 0.5s;
+}
+
+.visible-menu {
+  left: 0;
+}
