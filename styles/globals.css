@@ -16,6 +16,11 @@ body {
   font-family: "vazir", Vazirmatn, sans-serif;
 }
 
+input::placeholder {
+  opacity: 0.8 !important;
+  color: var(--text-dark-color) !important;
+}
+
 .font-vazir {
   font-family: "vazir", Vazirmatn, sans-serif;
 }
@@ -58,6 +63,32 @@ body {
 .hover-icon:hover {
   color: var(--bg-input-color);
   background-color: var(--text-dark-color);
+}
+
+.hover-icon:hover .tooltip-Icon {
+  display: block !important;
+}
+
+.tooltip-Icon {
+  clip-path: polygon(
+    0 27%,
+    45% 26%,
+    59% 0,
+    71% 26%,
+    100% 26%,
+    100% 100%,
+    0 100%
+  );
+  position: absolute;
+  background-color: var(--bg-input-color);
+  color: var(--text-dark-color);
+  top: 105%;
+  right: -57%;
+  width: 4rem;
+  text-align: center;
+  font-size: 0.8em;
+  display: none;
+  padding: 1.5rem 0 0.7rem 0;
 }
 
 .hover-danger:hover {
