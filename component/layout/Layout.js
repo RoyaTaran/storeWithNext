@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../header/Header";
+import Footer from "../footer/Footer";
 
 function Layout({
   headTitle,
@@ -24,6 +25,7 @@ function Layout({
       <main>
         <Header />
         {children}
+        <Footer />
       </main>
     </>
   );

@@ -3,12 +3,13 @@
 
 :root {
   --bg-main-color: #f3f4f6;
+  --bg-dark-color: #949494;
   --bg-card-color: #fff;
   --bg-input-color: #dfe6e9;
   --bg-nav-color: #b2bec3;
   --bg-badge-color: #ffa551;
-  --text-light-color: #637789;
-  --text-dark-color: #2c343c;
+  --text-light-color: #4b555f;
+  --text-dark-color: #223e57;
   --hover-color: #3183ff;
 }
 
@@ -26,6 +27,9 @@ input::placeholder {
 }
 .bg-main {
   background-color: var(--bg-main-color);
+}
+.bg-dark-color {
+  background-color: var(--bg-dark-color);
 }
 
 .bg-card {
@@ -68,7 +72,10 @@ input::placeholder {
 .hover-icon:hover .tooltip-Icon {
   display: block !important;
 }
-
+ 
+.hover-text:hover{
+  color: var(--hover-color);
+}
 .tooltip-Icon {
   clip-path: polygon(
     0 27%,
