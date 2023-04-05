@@ -1,17 +1,7 @@
 @import "./reset.css";
+@import "./root.css";
+@import "./breakPoint.css";
 @import url("https://gitcdn.ir/library/PersianFonts/vazir/style.css");
-
-:root {
-  --bg-main-color: #f3f4f6;
-  --bg-dark-color: #949494;
-  --bg-card-color: #fff;
-  --bg-input-color: #dfe6e9;
-  --bg-nav-color: #b2bec3;
-  --bg-badge-color: #ffa551;
-  --text-light-color: #4b555f;
-  --text-dark-color: #223e57;
-  --hover-color: #3183ff;
-}
 
 body {
   font-family: "vazir", Vazirmatn, sans-serif;
@@ -69,11 +59,14 @@ input::placeholder {
   background-color: var(--text-dark-color);
 }
 
+.hover-scale:hover {
+  scale: 1.2;
+}
 .hover-icon:hover .tooltip-Icon {
   display: block !important;
 }
- 
-.hover-text:hover{
+
+.hover-text:hover {
   color: var(--hover-color);
 }
 .tooltip-Icon {
@@ -91,7 +84,7 @@ input::placeholder {
   color: var(--text-dark-color);
   top: 105%;
   right: -57%;
-  width: 4rem;
+  width: 4.5rem;
   text-align: center;
   font-size: 0.8em;
   display: none;

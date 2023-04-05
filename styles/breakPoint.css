@@ -1,0 +1,29 @@
+@media (min-width: 200px) {
+  .media-min200-pt {
+    padding-top: 7.5rem;
+  }
+}
+@media (min-width: 425px) {
+  .media-min425-pt {
+    padding-top: 9.5rem;
+  }
+}
+@media (min-width: 576px) {
+  .media-min576-pt {
+    padding-top: 5.5rem;
+  }
+}
+@media (min-width: 768px) {
+ 
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+ 
+}
+@media (min-width: 1400px) {
+  .media-min1400-pt {
+    padding-top: 7.5rem;
+  }
+}
