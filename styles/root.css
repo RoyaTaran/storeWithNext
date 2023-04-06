@@ -1,6 +1,8 @@
 :root {
   --bg-main-color: #f3f4f6;
   --bg-dark-color: #949494;
+  --bg-gradient-dark-color: #2c3e50;
+  --bg-gradient-light-color: #2980b9;
   --bg-card-color: #fff;
   --bg-input-color: #dfe6e9;
   --bg-nav-color: #b2bec3;
@@ -9,3 +11,4 @@
   --text-dark-color: #223e57;
   --hover-color: #3183ff;
 }
+
