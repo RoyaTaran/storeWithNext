@@ -7,7 +7,10 @@ import { MdOutlineFavorite } from "react-icons/md";
 function CardProduct() {
   return (
     <>
-      <div id="card-product" className="media-min200-pt media-min425-pt media-min576-pt media-min1400-pt"  >
+      <div
+        id="card-product"
+        className="media-min200-pt media-min425-pt media-min576-pt media-min1400-pt"
+      >
         <div
           id="card-product-container"
           className="bg-card position-relative rounded "
@@ -49,18 +52,13 @@ function CardProduct() {
               id="card-product-discount-price"
               className="d-flex justify-content-between py-3"
             >
-              <div className="d-flex align-items-center">
-                <span className="bg-danger p-1 text-white rounded">10%</span>
-              </div>
-
               <div id="card-product-price">
                 <div className="text-dark-color pb-2">
-                  <span className="fw-bold fs-5">{1350_000}</span>
+                  <span className="fw-bold fs-5 text-badge-coloor">
+                    {1350_000}
+                  </span>
                   <span style={{ fontSize: ".7rem" }}>تومان</span>
                 </div>
-                <span className="text-danger text-decoration-line-through">
-                  {150_000}
-                </span>
               </div>
             </div>
 

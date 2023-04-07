@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./root.css";
-@import './carousel.css';
+@import "./carousel.css";
+@import "./swiperProposalProduct.css";
 @import "./breakPoint.css";
 @import url("https://gitcdn.ir/library/PersianFonts/vazir/style.css");
 
@@ -38,35 +39,31 @@ input::placeholder {
   background-color: var(--bg-badge-color);
 }
 .bg-gradient {
-  background: var(
-    --bg-gradient-light-color
-  ) !important; /* fallback for old browsers */
+  background: var(--bg-gradient-light-color) !important;
   background: -webkit-linear-gradient(
     to right,
     var(--bg-gradient-dark-color),
     var(--bg-gradient-light-color)
-  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  ) !important;
   background: linear-gradient(
     to right,
     var(--bg-gradient-dark-color),
     var(--bg-gradient-light-color)
-  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ) !important;
 }
 
 .bg-gradient:hover {
-  background: var(
-    --bg-gradient-light-color
-  ) !important; /* fallback for old browsers */
+  background: var(--bg-gradient-light-color) !important;
   background: -webkit-linear-gradient(
     to left,
     var(--bg-gradient-dark-color),
     var(--bg-gradient-light-color)
-  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  ) !important;
   background: linear-gradient(
     to left,
     var(--bg-gradient-dark-color),
     var(--bg-gradient-light-color)
-  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ) !important;
 }
 
 .text-light-color {
@@ -76,7 +73,7 @@ input::placeholder {
 .text-dark-color {
   color: var(--text-dark-color);
 }
-.text-badge-coloor{
+.text-badge-color {
   color: var(--bg-badge-color);
 }
 
@@ -153,6 +150,6 @@ input::placeholder {
   left: 0;
 }
 
-.h-16em {
+/* .h-16em {
   height: 16em !important;
-}
+} */
