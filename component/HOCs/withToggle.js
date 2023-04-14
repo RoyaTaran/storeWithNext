@@ -7,7 +7,20 @@ function withToggle(OriginalComponent) {
     const toggleHandler = () => {
       setIsShow((prevIsShow) => !prevIsShow);
     };
-    return <OriginalComponent isShow={isShow} toggleHandler={toggleHandler} />;
+    const showHandler = () => {
+      setIsShow(true);
+    };
+    const hiddenHandler = () => {
+      setIsShow(false);
+    };
+    return (
+      <OriginalComponent
+        isShow={isShow}
+        toggleHandler={toggleHandler}
+        showHandler={showHandler}
+        hiddenHandler={hiddenHandler}
+      />
+    );
   };
   return NewComponent;
 }

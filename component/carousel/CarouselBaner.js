@@ -1,10 +1,14 @@
 import Carousel from "react-bootstrap/Carousel";
+import Typewriter from "typewriter-effect";
 
 function CarouselBaner() {
   return (
     <>
-      <div className="Container-Carousel">
-        <Carousel className=" Home-Carousel rounded-3 bg-gradient ">
+      <div className="Container-Carousel pt-4">
+        <Carousel
+          interval={5000}
+          className=" Home-Carousel round bg-gradient "
+        >
           <Carousel.Item className="bg-transparent Img-Carousel1">
             {/* <Link to={`/product/category:${product.MainCategory.title}`}> */}
             <img
@@ -15,7 +19,21 @@ function CarouselBaner() {
             {/* </Link> */}
             <Carousel.Caption>
               {/* <Link to={`/product/category:${product.MainCategory.title}`}> */}
-              <h2 className="Carousel-Title">کیفیت هرگز از مد نمی افتد !</h2>
+              <h2 className="Carousel-Title">
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString("کیفیت هرگز از مد نمی افتد !")
+                      .start()
+                      .pauseFor(500)
+                      .deleteAll()
+                      .typeString("فروش به صورت کلی و جزئی")
+                      .pauseFor(500)
+                      .start();
+                  }}
+                  options={{ loop: true }}
+                />
+              </h2>
               {/* </Link> */}
               {/* <Link to={`/product/category:${product.MainCategory.title}`}> */}
               <p className="Carousel-Paragraph">
@@ -37,7 +55,21 @@ function CarouselBaner() {
             {/* </Link> */}
             <Carousel.Caption>
               {/* <Link to={`/product/category:${product.MainCategory.title}`}> */}
-              <h2 className="Carousel-Title">کیفیت هرگز از مد نمی افتد !</h2>
+              <h2 className="Carousel-Title">
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString("کیفیت هرگز از مد نمی افتد !")
+                      .start()
+                      .pauseFor(500)
+                      .deleteAll()
+                      .typeString("فروش به صورت کلی و جزئی")
+                      .pauseFor(500)
+                      .start();
+                  }}
+                  options={{ loop: true }}
+                />
+              </h2>
               {/* </Link> */}
               {/* <Link to={`/product/category:${product.MainCategory.title}`}> */}
               <p className="Carousel-Paragraph">
@@ -59,7 +91,21 @@ function CarouselBaner() {
             {/* </Link> */}
             <Carousel.Caption>
               {/* <Link to={`/product/category:${product.MainCategory.title}`}> */}
-              <h2 className="Carousel-Title">کیفیت هرگز از مد نمی افتد !</h2>
+              <h2 className="Carousel-Title">
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString("کیفیت هرگز از مد نمی افتد !")
+                      .start()
+                      .pauseFor(500)
+                      .deleteAll()
+                      .typeString("فروش به صورت کلی و جزئی")
+                      .pauseFor(500)
+                      .start();
+                  }}
+                  options={{ loop: true }}
+                />
+              </h2>
               {/* </Link> */}
               {/* <Link to={`/product/category:${product.MainCategory.title}`}> */}
               <p className="Carousel-Paragraph">

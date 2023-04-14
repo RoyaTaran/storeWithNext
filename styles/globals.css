@@ -84,11 +84,18 @@ input::placeholder {
 
 .hover-navlink:hover {
   border-color: var(--hover-color) !important;
-  opacity: 0.9;
+  color: var(--hover-color) !important;
+  opacity: 0.9 !important;
 }
 .hover-icon:hover {
   color: var(--bg-input-color);
   background-color: var(--text-dark-color);
+}
+.hover-mainProduct-icon:hover {
+  opacity: 1 !important;
+}
+.hover-mainProduct-icon:hover .tooltip-Icon {
+  display: block !important;
 }
 
 .hover-scale:hover {
@@ -115,16 +122,17 @@ input::placeholder {
   background-color: var(--bg-input-color);
   color: var(--text-dark-color);
   top: 105%;
-  right: -57%;
+  right: -57% !important;
   width: 4.5rem;
   text-align: center;
   font-size: 0.8em;
   display: none;
   padding: 1.5rem 0 0.7rem 0;
+  z-index: 1;
 }
 
 .hover-danger:hover {
-  color: red;
+  color: red !important;
 }
 
 .border-nav-color {
@@ -135,7 +143,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-.hidden-menu {
+.hidden-page {
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -146,10 +154,14 @@ input::placeholder {
   transition: all 0.5s;
 }
 
-.visible-menu {
+.visible-page {
   left: 0;
 }
 
 /* .h-16em {
   height: 16em !important;
 } */
+
+.activLink {
+  color: var(--hover-color);
+}

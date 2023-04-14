@@ -1,8 +1,9 @@
 .mySwiper {
-  padding-top: 3rem !important ;
-  background: #c2798d !important;
-  background: -webkit-linear-gradient(to left, #f4e2d8, #c2798d) !important;
-  background: linear-gradient(to left, #f4e2d8, #c2798d) !important;
+  background: #d0deff !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #a695fc, #d0deff) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #a695fc, #d0deff) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  
 }
 
 .swiper {

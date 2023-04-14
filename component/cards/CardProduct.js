@@ -3,8 +3,10 @@ import { RiArrowLeftFill } from "react-icons/ri";
 import { BsFillHandbagFill } from "react-icons/bs";
 import { IoMdGitCompare } from "react-icons/io";
 import { MdOutlineFavorite } from "react-icons/md";
+import {numberSeparator} from '../../utils/utils'
 
 function CardProduct() {
+
   return (
     <>
       <div
@@ -54,8 +56,8 @@ function CardProduct() {
             >
               <div id="card-product-price">
                 <div className="text-dark-color pb-2">
-                  <span className="fw-bold fs-5 text-badge-coloor">
-                    {1350_000}
+                  <span className="fw-bold fs-5 text-badge-color">
+                    {numberSeparator(135_000)}
                   </span>
                   <span style={{ fontSize: ".7rem" }}>تومان</span>
                 </div>

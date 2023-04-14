@@ -6,12 +6,15 @@ import { ImMobile } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { SiMinutemailer } from "react-icons/si";
 import { FaAddressBook } from "react-icons/fa";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 function BodyFooter() {
+  const router = useRouter();
   return (
     <>
       <Row className="pt-3">
-        <Col id="body-footer-story" xs={12}  lg={4} >
+        <Col id="body-footer-story" xs={12} lg={4}>
           <h2 className="py-3 fs-5 fw-bold text-primary">
             <span>درباره چاقوکده</span>
           </h2>
@@ -28,9 +31,10 @@ function BodyFooter() {
             </p>
           </div>
         </Col>
-        <Col id="body-footer-quickaccess" 
-        xs={12}
-        lg={3}
+        <Col
+          id="body-footer-quickaccess"
+          xs={12}
+          lg={3}
           className="d-flex flex-column  align-items-start align-items-lg-center"
         >
           <div>
@@ -39,16 +43,16 @@ function BodyFooter() {
             </h2>
             <ul>
               <li className="hover-text d-flex py-3 cursor-pointer text-dark-color">
-                <a>
+                <Link href="/">
                   <RiArrowLeftSFill className="text-primary" />
                   <span>چاقوکده</span>
-                </a>
+                </Link>
               </li>
               <li className="hover-text d-flex py-3 cursor-pointer text-dark-color">
-                <a>
+                <Link href="/products">
                   <RiArrowLeftSFill className="text-primary" />
-                  <span>مقالات</span>
-                </a>
+                  <span>فروشگاه</span>
+                </Link>
               </li>
             </ul>
           </div>

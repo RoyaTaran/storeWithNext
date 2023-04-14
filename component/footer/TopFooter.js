@@ -3,18 +3,25 @@ import { Col, Row } from "react-bootstrap";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Link from "next/link";
 
 function TopFooter() {
   return (
     <Row>
       <Col id="top-footer-logo" sm={4} md={3}>
-        <div className="d-flex justify-content-center cursor-pointer  py-4 py-sm-1">
-          <img src="/images/logo-bg-transparent.png" className="w-50 mx-outo" />
-          <img
-            src="/images/favicon.png"
-            style={{ width: "3rem", height: "3rem" }}
-          />
-        </div>
+        <Link href="/">
+          {" "}
+          <div className="d-flex justify-content-center cursor-pointer  py-4 py-sm-1">
+            <img
+              src="/images/logo-bg-transparent.png"
+              className="w-50 mx-outo"
+            />
+            <img
+              src="/images/favicon.png"
+              style={{ width: "3rem", height: "3rem" }}
+            />
+          </div>
+        </Link>
       </Col>
 
       <Col

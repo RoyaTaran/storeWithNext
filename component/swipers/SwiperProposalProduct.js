@@ -80,7 +80,7 @@ export default function SwiperProposalProduct() {
         <SwiperSlide>
           <div
             id="swiper-proposal-product-title"
-            className=" w-100 position-relative d-flex flex-column justify-content-end align-items-center  text-badge-color bg-warning"
+            className=" w-100 position-relative d-flex flex-column justify-content-end align-items-center  text-badge-color bg-danger"
             style={{ width: "250px", height: "350px" }}
           >
             <img
@@ -93,18 +93,18 @@ export default function SwiperProposalProduct() {
                 right: "79%",
               }}
             />
-            <h4
-              className="fs-4 fw-bold text-dark-color position-absolute"
+            <img
+              src="./images/newProductText.png"
+              alt="proposal product  "
+              className="position-absolute "
               style={{
-                width: "30rem",
+                width: "18rem",
+                height: "3.5rem",
                 transform: "rotate(-37deg)",
-                top: " 46%",
-                left: "-76%",
+                top: " 25%",
+                left: "-9%",
               }}
-            >
-              محصولات جدیدی در راه است
-            </h4>
-
+            />
             <img
               src="./images/discount-1.png"
               alt="proposal product pt-5  "

@@ -1,7 +1,7 @@
 .Home-Carousel {
-  width: 75%;
-  height: 18em;
-  margin: 1.5em auto;
+  width: 1500px;
+  height: 22em;
+  margin: auto;
 }
 .Img-Carousel {
   height: 16em !important;
@@ -21,7 +21,7 @@
 }
 
 .Carousel-Btn:hover {
-    scale: 1.1;
+  scale: 1.1;
 }
 
 .Carousel-Title {
@@ -39,6 +39,11 @@
   bottom: 5.5em;
 }
 
+@media (max-width: 1400px) {
+  .Home-Carousel {
+    width: 100%;
+  }
+}
 @media (max-width: 1024px) {
   .Container-Carousel {
     width: 100%;
