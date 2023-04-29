@@ -3,16 +3,13 @@ import { RiArrowLeftFill } from "react-icons/ri";
 import { BsFillHandbagFill } from "react-icons/bs";
 import { IoMdGitCompare } from "react-icons/io";
 import { MdOutlineFavorite } from "react-icons/md";
-import {numberSeparator} from '../../utils/utils'
+import { numberSeparator } from "../../utils/utils";
+import ShowRate from "../../component/rating/ShowRate";
 
-function CardProduct() {
-
+function CardProduct(props) {
   return (
     <>
-      <div
-        id="card-product"
-        className="media-min200-pt media-min425-pt media-min576-pt media-min1400-pt"
-      >
+      <div id="card-product" className="pt-5 mt-1">
         <div
           id="card-product-container"
           className="bg-card position-relative rounded "
@@ -20,7 +17,8 @@ function CardProduct() {
         >
           <div
             id="card-product-img"
-            className="w-75 mx-auto cursor-pointer bg-input d-flex justify-content-center position-absolute top-0 start-50 translate-middle rounded  "
+            className="w-75 mx-auto cursor-pointer bg-input d-flex justify-content-center position-absolute start-50 translate-middle rounded"
+            style={{ top: "6%", height: "7rem" }}
           >
             <img
               src="./images/1.png"
@@ -35,7 +33,7 @@ function CardProduct() {
             style={{ width: "90%" }}
           >
             <h4 className="py-3 cursor-pointer hover-text text-dark-color">
-              چاقوی اشپزخانه
+              چاقوی اشپزخانه{props.title}
             </h4>
             <p
               id="card-product-desc"
@@ -54,8 +52,20 @@ function CardProduct() {
               id="card-product-discount-price"
               className="d-flex justify-content-between py-3"
             >
-              <div id="card-product-price">
-                <div className="text-dark-color pb-2">
+              <div
+                id="card-product-price-rateAvrage"
+                className="d-flex justify-content-between align-items-center w-100"
+              >
+                <div id="card-product-rateAvrage">
+                  <span
+                    className="px-2 text-light-color opacity-50"
+                    style={{ fontSize: ".7rem" }}
+                  >
+                    {3.4}
+                  </span>
+                  <ShowRate rateAvrage={3.4} />
+                </div>
+                <div id="card-product-price" className="text-dark-color pb-2">
                   <span className="fw-bold fs-5 text-badge-color">
                     {numberSeparator(135_000)}
                   </span>

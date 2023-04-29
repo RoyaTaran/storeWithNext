@@ -19,9 +19,9 @@ function BuyMainProduct({ isShow, showHandler, hiddenHandler }) {
         <span className="text-dark-color fw-bold">وضعیت :</span>
         <span className="text-success px-2">موجود</span>
       </div>
-      <h4 className="fs-2 fw-bold py-3 py-xl-5">
+      <h4 className="fs-2 text-dark-color fw-bold py-3 py-xl-5">
         <span>{numberSeparator(60000)}</span>
-        <span>تومان</span>
+        <span className="fs-6 px-1 fw-100" >تومان</span>
       </h4>
       {count == 0 ? (
         <button

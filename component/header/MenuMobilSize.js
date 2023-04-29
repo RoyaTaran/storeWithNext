@@ -15,7 +15,7 @@ function MenuMobilSize({ isShow, toggleHandler }) {
   return (
     <>
       <div
-        style={{ zIndex: "10" }}
+        style={{ zIndex: "11" }}
         className={`hidden-page overflow-auto d-lg-none ${
           isShow ? "visible-page" : ""
         }`}

@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <>
       <Row id="navbar" className="d-none d-lg-block">
-        <navbar
+        <div
           className="bg-nav py-3 d-flex justify-content-center "
           style={{
             width: "90%",
@@ -64,7 +64,7 @@ function Navbar() {
               </li> */}
             </ul>
           </Col>
-        </navbar>
+        </div>
       </Row>
     </>
   );

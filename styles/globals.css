@@ -138,6 +138,9 @@ input::placeholder {
 .border-nav-color {
   border-color: var(--bg-nav-color) !important;
 }
+.border-main-color {
+  border-color: var(--bg-main-color) !important;
+}
 
 .cursor-pointer {
   cursor: pointer;
@@ -163,5 +166,5 @@ input::placeholder {
 } */
 
 .activLink {
-  color: var(--hover-color);
+  color: var(--hover-color) !important;
 }

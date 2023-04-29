@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Layout from "../component/layout/Layout";
+import Layout from "../component/layouts/Layout";
 import CardProduct from "../component/cards/CardProduct";
 import Carousel from "../component/carousel/CarouselBaner";
 import SwiperProposalProduct from "../component/swipers/SwiperProposalProduct";
