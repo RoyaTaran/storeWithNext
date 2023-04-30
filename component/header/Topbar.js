@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Row, Col, Form, Button } from "react-bootstrap";
 import { CiSearch } from "react-icons/ci";
 import { IoMdGitCompare } from "react-icons/io";
@@ -7,11 +7,24 @@ import { BsFillHandbagFill, BsFillArrowRightCircleFill } from "react-icons/bs";
 import { MdLightMode, MdDarkMode, MdOutlineFavorite } from "react-icons/md";
 import useTemToggle from "../../customHooks/useTemToggle";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import SidebarCart from "../../component/cart/SidebarCart";
 
 function Topbar() {
   const [isLightTem, temToggleHandler] = useTemToggle();
+  const [showSidebarCart, setShowSidebarCart] = useState(false);
+  const router = useRouter();
+  const openSidebarCartHandler = () => {
+    if (router.pathname !== "/cart") {
+      setShowSidebarCart(true);
+    }
+  };
   return (
     <>
+      <SidebarCart
+        showSidebarCart={showSidebarCart}
+        onshowSidebarCart={(hidden) => setShowSidebarCart(hidden)}
+      />
       <Row
         id="topbar-media-1024"
         className="d-none d-lg-flex bg-card py-5 rounded-4"
@@ -67,36 +80,19 @@ function Topbar() {
                 </div>
               </div>
             )}
-            <Link href="/cart">
-              <div className="rounded-circle p-3 bg-input mx-2 text-dark-color hover-icon position-relative cursor-pointer">
-                <BsFillHandbagFill className="fs-5 " />
-                <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill  bg-badge">
-                  1
-                </span>
-                <div id="toltip-team" className=" tooltip-Icon">
-                  <span>سبد خرید</span>
-                </div>
-              </div>
-            </Link>
 
-            {/* <div className="rounded-circle p-3 bg-input mx-2 text-dark-color hover-icon position-relative cursor-pointer">
-              <IoMdGitCompare className="fs-5" />
+            <div
+              className="rounded-circle p-3 bg-input mx-2 text-dark-color hover-icon position-relative cursor-pointer"
+              onClick={openSidebarCartHandler}
+            >
+              <BsFillHandbagFill className="fs-5 " />
               <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill  bg-badge">
                 1
               </span>
               <div id="toltip-team" className=" tooltip-Icon">
-                <span>مقایسه</span>
+                <span>سبد خرید</span>
               </div>
             </div>
-            <div className="rounded-circle p-3 bg-input mx-2 text-dark-color hover-icon position-relative cursor-pointer">
-              <MdOutlineFavorite className="fs-5" />
-              <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill  bg-badge ">
-                10
-              </span>
-              <div id="toltip-team" className=" tooltip-Icon">
-                <span>علاقه مندی</span>
-              </div>
-            </div> */}
           </div>
         </Col>
 

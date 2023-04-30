@@ -81,6 +81,9 @@ input::placeholder {
   background-color: var(--hover-color) !important;
   color: #fff !important;
 }
+.hover-opacity:hover{
+  opacity: .9;
+}
 
 .hover-navlink:hover {
   border-color: var(--hover-color) !important;
