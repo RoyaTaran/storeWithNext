@@ -5,11 +5,11 @@ import Link from "next/link";
 function FooterSideCart() {
   return (
     <div
-      className="fixed-bottom bg-input border-top  py-3"
-      style={{ width: "25rem" }}
+      className="fixed-bottom bg-input border-top width-sm-20rem width-md-25rem py-3"
+      
     >
-      <div className="d-flex justify-content-around align-items-center fs-5">
-        <section className="d-flex justify-content-end align-items-center text-danger">
+      <div className="d-flex justify-content-around align-items-center fw-bold">
+        <section className="d-flex justify-content-end  align-items-center text-danger">
           <p className="px-1">تومان</p> <p>{numberSeparator(135_000)}</p>
         </section>
         <p className="text-dark-color">: جمع کل سبد خرید</p>

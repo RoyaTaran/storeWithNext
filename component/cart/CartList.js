@@ -8,7 +8,7 @@ function CartList() {
   const [count, addCountHandler, minusCountHandler, zeroCountHandler] =
     useCount(1);
   return (
-    <Container className="border-bottom p-4 bg-card hover-opacity cursor-pointer">
+    <Container className="border-bottom py-4 px-sm-4 bg-card hover-opacity cursor-pointer">
       <Row>
         <Col id="cart-list-delete" xs={2}>
           <AiOutlineClose className="text-dark-color hover-danger" />

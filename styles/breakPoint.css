@@ -1,4 +1,14 @@
 @media (min-width: 200px) {
+  .width-sm-20rem {
+    width: 22rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 355px) {
+  .width-md-25rem {
+    width: 25rem;
+    margin: 0;
+  }
 }
 @media (min-width: 425px) {
 }
