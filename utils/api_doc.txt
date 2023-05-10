@@ -1,0 +1,216 @@
+main url = http://localhost:3000/api/
+
+
+//////////////////////// start Products Routes(sub_url => products/) //////////////
+
+1.Get all products
+method => GET
+res => all products array
+
+
+2.Add mew product
+method => POST
+req body => {
+ title =>عنوان محصول
+ price => قیمت محصول
+ description =>توضیحات محصول
+ count => موجودی محصول
+ slug => آیدی محصول
+ popularity => میزان محبوبیت محصول
+ img => آدرس عکس محصول
+ sale => میزان فروش محصول
+}
+
+
+3.Delete main product
+method => Delete
+req param => productId => products Id
+
+
+4.Update main product
+method => PUT
+req param => productId => products Id
+req body => {
+ title =>عنوان جدید محصول
+ price => قیمت جدید محصول
+ description =>توضیحات جدید محصول
+ count => موجودی جدید محصول
+ slug => آیدی جدید محصول
+ popularity => میزان محبوبیت جدید محصول
+ img => آدرس عکس جدید محصول
+ sale => میزان فروش جدید محصول
+}
+
+////////////////////// finish products Routes ///////////////////////////////
+
+
+//////////////////////// start users Routes(sub_url => users/) //////////////
+
+1.Get all users
+method => GET
+res => all users array
+
+
+2.Add mew user
+method => POST
+req body => {
+ token =>توکن کاربر
+ firstName => نام کاربر
+ lastName =>نام خانوادگی کاربر
+ phone => شماره تماس کاربر
+ email => ایمیل کاربر
+ password => رمز ورود کاربر
+ buy => میزان خرید کاربر
+ city => شهر کاربر
+ addres => آدرس کاربر
+}
+
+
+3.Delete main user 
+method => Delete
+req param => userId => users Id
+
+
+4.Update main user
+method => PUT
+req param => userId => users Id
+req body => {
+ firstName => نام جدید کاربر
+ lastName =>نام خانوادگی جدید کاربر
+ phone => شماره تماس جدید کاربر
+ email => ایمیل جدید کاربر
+ password => رمز ورود جدید کاربر
+ buy => میزان خرید جدید کاربر
+ city => شهر جدید کاربر
+ addres => آدرس جدید کاربر
+}
+
+////////////////////// finish users Routes ///////////////////////////////
+
+
+//////////////////////// start admins Routes(sub_url => admins/) //////////////
+1.Get all admins
+method => GET
+res => all admins array
+
+2.Add mew user
+method => POST
+req body => {
+ token =>توکن مدیر
+ firstName => نام مدیر
+ lastName =>نام خانوادگی مدیر
+ phone => شماره تماس مدیر
+ password => رمز ورود مدیر
+ task => سمت مدیر
+}
+
+3.Get main admin(sub_url => admins/mainAdmin)
+method => GET
+res header => authorization => Admin token
+
+4.Update main admin 
+method => PUT
+req param => adminId => admins Id
+req body => {
+ firstName => نام جدید مدیر
+ lastName =>نام خانوادگی جدید مدیر
+ phone => شماره تماس جدید مدیر
+ password => رمز ورود جدید مدیر
+ task => سمت جدید مدیر
+}
+
+////////////////////// finish admins Routes ///////////////////////////////
+
+
+//////////////////////// start comments Routes(sub_url => comments/) //////////////
+
+1.Get all comments
+method => GET
+res => all comments array
+
+
+2.Add mew comment
+method => POST
+req body => {
+ body => محتوای کامنت
+ date => تاریخ کامنت
+ hour => ساعت کامنت
+ userId => آیدی کاربر نویسنده کامنت
+ productId => آیدی محصول 
+}
+
+
+3.Delete main comment
+method => Delete
+req param => commentId => comments Id
+
+
+4.Update main comment
+method => PUT
+req param => commentId => comments Id
+req body => {
+ body => محتوای جدید کامنت
+}
+
+5.Update main comment (sub_url => comments/:commentId/:isActive)
+method => PUT
+req param => isActive (0 or 1) => Accept / Reject comment
+
+////////////////////// finish comments Routes ///////////////////////////////
+
+
+//////////////////////// start orders Routes(sub_url => orders/) //////////////
+
+1.Get all orders
+method => GET
+res => all orders array
+
+
+2.Update main order
+method => PUT
+req param => orderId => order Id
+
+
+3.Update main order(sub_url => orders/:orderId/:isActive)
+method => PUT
+req param => isActive (0 or 1) => Accept / Reject order
+
+
+4.Delete main order
+method => Delete
+req param => orderId => orders Id
+
+////////////////////// finish orders Routes ///////////////////////////////
+
+
+//////////////////////// start offs Routes(sub_url => offs/) //////////////
+
+1.Get all offs
+method => GET
+res => all offs array
+
+
+2.Update main off
+method => PUT
+req param => offId => off Id
+
+
+3.Update main off(sub_url => offs/:offId/:isActive)
+method => PUT
+req param => isActive (0 or 1) => Accept / Reject off
+
+
+4.Delete main off
+method => Delete
+req param => offId => offs Id
+
+2.Add mew off
+method => POST
+req body => {
+ code => محتوای تخفیف
+ percent => تاریخ تخفیف
+ date => ساعت تخفیف
+ adminId => آیدی مدیر نویسنده تخفیف
+}
+
+////////////////////// finish offs Routes ///////////////////////////////

@@ -1,0 +1,68 @@
+1.products
+id
+title
+price
+count
+img 
+popularity
+sale
+desc
+slug
+
+
+2.comments
+id
+body
+date
+hour
+isActive
+userId(foreign key=>id (users))
+productId(foreign key=>id (products))
+
+
+3.users
+id
+firstName
+lastName
+phone
+score
+email
+password
+buy
+city
+address
+token
+
+
+4.orders
+id
+userSlug(foreign key=>id (users))
+productSlug(foreign key=>id (products))
+date
+hour
+price
+sale
+count
+popularity
+off
+sale_count
+isActive
+
+5.offs
+id
+code
+percent
+date
+isActive
+adminId(foreign key=>id (admins))
+productId(foreign key=>id (products))
+
+6.admins
+id
+token
+firstName
+lastName
+phone
+password
+task
+
