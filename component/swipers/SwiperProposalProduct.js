@@ -80,7 +80,7 @@ export default function SwiperProposalProduct() {
         <SwiperSlide>
           <div
             id="swiper-proposal-product-title"
-            className=" w-100 position-relative d-flex flex-column justify-content-end align-items-center  text-badge-color bg-danger"
+            className=" w-100 position-relative d-flex flex-column justify-content-end align-items-center  text-badge-color bg-warning"
             style={{ width: "250px", height: "350px" }}
           >
             <img

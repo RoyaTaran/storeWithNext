@@ -54,7 +54,6 @@ res => all users array
 2.Add mew user
 method => POST
 req body => {
- token =>توکن کاربر
  firstName => نام کاربر
  lastName =>نام خانوادگی کاربر
  phone => شماره تماس کاربر
@@ -84,6 +83,9 @@ req body => {
  city => شهر جدید کاربر
  addres => آدرس جدید کاربر
 }
+5.Update main user (sub_url => users/:mobileNumber/:newCode)
+method => PUT
+req param =>  passwordCode (newCode) => passwordCode=newCode
 
 ////////////////////// finish users Routes ///////////////////////////////
 

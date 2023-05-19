@@ -1,5 +1,5 @@
 function handler(req, res) {
-    const DataBase = require("../../../utils/db");
+    const DataBase = require("../../../../utils/db");
     DataBase.connect(() => {
       if (req.method === "DELETE") {
         const userId = req.query.userId;
